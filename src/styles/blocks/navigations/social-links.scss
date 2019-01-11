@@ -1,0 +1,15 @@
+.social-links__item {
+  &+& {
+    margin-top: 18px;
+  }
+}
+
+.social-links__icon {
+  width: 20px;
+  height: 20px;
+  transition: transform .2s ease-out;
+  &:hover,
+  &:focus {
+    transform: scale(1.2)
+  }
+}

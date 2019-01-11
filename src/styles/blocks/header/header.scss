@@ -1,0 +1,41 @@
+.header {
+  padding-top: 67px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__menu {
+  margin-left: auto;
+}
+
+.header__user-nav {
+  margin-left: 68px;
+}
+
+.header__language {
+  font-size: 14px;
+  color: #959595;
+  word-spacing: 11px;
+  padding-top: 5px;
+}
+
+.header__language-item {
+  display: inline;
+  cursor: pointer;
+  &--active {
+    color: #959595;
+    font-weight: 700;
+    border-bottom: 1px solid #647397;
+    word-spacing: normal;
+    margin-right: 11px;
+  }
+}
+
+
+
+@import "./page-menu.scss";
+@import "./logo.scss";

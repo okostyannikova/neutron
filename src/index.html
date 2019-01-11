@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML Starter</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <a href="index.html" title="home" class="logo header__logo">
+          neutron <span class="logo__accent">Mail</span>
+        </a>
+
+        <nav class="page-menu header__menu">
+          <ul class="page-menu__list">
+            <li class="page-menu__item">
+              <a href="#" class="page-menu__link">About</a>
+            </li>
+            <li class="page-menu__item">
+              <a href="#" class="page-menu__link">Security</a>
+            </li>
+            <li class="page-menu__item">
+              <a href="#" class="page-menu__link">Blog</a>
+            </li>
+            <li class="page-menu__item">
+              <a href="#" class="page-menu__link">Careers</a>
+            </li>
+            <li class="page-menu__item">
+              <a href="#" class="page-menu__link">Support</a>
+            </li>
+            <li class="page-menu__item">
+              <a href="#" class="page-menu__link">Donate</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="user-nav header__user-nav">
+          <button class="user-nav__login login-btn button">
+            <svg
+              class="login-btn__icon"
+              aria-hidden="true"
+              data-prefix="fas"
+              data-icon="sign-in-alt"
+              class="svg-inline--fa fa-sign-in-alt fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M416 448h-84c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h84c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32h-84c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h84c53 0 96 43 96 96v192c0 53-43 96-96 96zm-47-201L201 79c-15-15-41-4.5-41 17v96H24c-13.3 0-24 10.7-24 24v96c0 13.3 10.7 24 24 24h136v96c0 21.5 26 32 41 17l168-168c9.3-9.4 9.3-24.6 0-34z"
+              ></path>
+            </svg>
+            Log in
+          </button>
+          <button class="user-nav__singup signup-btn button">Sign up</button>
+        </nav>
+      </div>
+
+      <div class="container">
+        <ul class="header__language">
+          <li class="header__language-item header__language-item--active">
+            English
+          </li>
+          /
+          <li class="header__language-item">French</li>
+          /
+          <li class="header__language-item">Italian</li>
+          /
+          <li class="header__language-item">Polish</li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="herro">
+
+      <div class="herro__container container">
+        <div class="herro__text">
+          <h1 class="herro__title">Secure Email Communication</h1>
+          <p class="herro__desc">
+            Based in <span class="text-accented"> Somewhere</span>
+          </p>
+        </div>
+
+        <div class="herro__buttons app-buttons">
+        <a href="#" class="create-account-btn button" >Create account</a>
+        <a href="#" class="app-store-link button" title="Go to Apple Store">
+          <img class="app-store-link__icon" src="./images/icons/apple-brands.svg" alt="apple store">
+        </a>
+        <a href="#" class="google-play-link button" title="Go to Google Play">
+          <img class="google-play-link__icon" src="./images/icons/google-play-brands.svg" alt="google play">
+        </a>
+        </div>
+      </div>
+
+      <ul class="herro__social social-links">
+          <li class="social-links__item">
+            <a href title="google+">
+              <img class="social-links__icon" src="./images/icons/google-plus-square-brands.svg"/>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a href title="facebook">
+                <img class="social-links__icon" src="./images/icons/facebook-square-brands.svg"/>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a href title="twitter">
+                <img class="social-links__icon" src="./images/icons/twitter-square-brands.svg"/>
+            </a>
+          </li>
+      </ul>
+
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
