@@ -7,4 +7,11 @@
   min-height: 62px;
   border-radius: 31px;
   border: 1px solid $text-color-main;
+  transition: color 0.3s ease-in-out, border 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), background-color 0.3s ease-in-out;
+
+  &:hover {
+   color: #ffffff;
+   border-color: #ffffff;
+   background-color: lighten($text-color-main, 10%) 
+  }
 }
