@@ -1,0 +1,45 @@
+#slider {
+  position: relative;
+  height: 143px;
+}
+
+#slider .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.7s;
+}
+
+#slider .showing {
+  left: 0px;
+  top: 0px;
+  opacity: 1;
+  z-index: 2;
+}
+
+#slider .indicators {
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+
+#slider .indicator-item {
+  display: block;
+  width: 11px;
+  height: 11px;
+  border: none;
+  padding: 0;
+  border-radius: 100%;
+  background-color: #b7b7b7;
+  margin: 10px auto 0;
+  transition: all 0.7s;
+}
+
+#slider .indicator-item.active {
+  width: 13px;
+  height: 13px;
+  background-color: #101010;
+  transition: all 0.7s;
+}

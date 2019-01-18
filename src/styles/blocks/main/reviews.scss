@@ -1,0 +1,32 @@
+.reviews {
+  margin-top: 39px;
+}
+
+.reviews__img {
+  max-width: 1800px;
+  padding-left: 21px;
+  margin: auto;
+}
+
+.reviews__list {
+  margin: 56px auto 0 auto;
+  max-width: 1100px;
+}
+
+.reviews__text {
+  font-family: "Aleo", serif;
+  max-width: 525px;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 1.29;
+  letter-spacing: 0.2px;
+  color: #101010;
+  margin-left: 43px;
+}
+
+.reviews__author {
+  font-size: 16px;
+  line-height: 2;
+  color: #727272;
+  margin: 6px 0 0;
+}

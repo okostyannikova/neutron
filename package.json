@@ -26,6 +26,7 @@
     "gulp-rev": "^9.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
+    "gulp-svg-sprite": "^1.5.0",
     "gulp-svgmin": "^2.1.0",
     "node-sass": "^4.11.0"
   },

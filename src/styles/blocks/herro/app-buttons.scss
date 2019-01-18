@@ -1,50 +1,27 @@
-.app-buttons .button {
-  background-color: #5f2966;
-}
-
-.create-account-btn {
-  min-width: 246px;
-  min-height: 56px;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 3.11;
-  letter-spacing: 0.2px;
-  text-align: center;
-  color: #ffffff;
-  border-radius: 28px;
-  box-shadow: 0px 7px 9px 0 rgba(100, 115, 151, 0.15),
-    0px 13px 21px 0 rgba(20, 80, 204, 0.27), 0px 13px 21px 0 rgba(0, 0, 0, 0.15),
-    0px 4px 16px 0 rgba(102, 145, 233, 0.33), 0px 4px 16px 0 rgba(0, 0, 0, 0.09),
-    0px 3px 9px 0 rgba(53, 103, 205, 0.09), 0px 3px 9px 0 rgba(0, 0, 0, 0.09),
-    0px 3px 3px 0 rgba(102, 145, 233, 0.09), 0px 3px 3px 0 rgba(0, 0, 0, 0.17);
-  &:hover {
-    background-image: linear-gradient(to right, #646c92, #5f2966);
-  }
-}
-
 .app-store-link,
 .google-play-link {
   width: 46px;
   height: 46px;
-  margin-left: 25px;
+  margin-left: 19px;
+  background-color: $btn-color-main;
   border-radius: 50%;
   &:hover {
-    background-image: linear-gradient(to right, #646c92, #5f2966);
+    background-image: linear-gradient(to right, #646c92, $btn-color-main);
   }
 }
 
 .app-store-link {
-  padding: 9px 14px 13px;
+  padding: 9px 8px 17px
 }
 
 .google-play-link {
-  padding: 13px 12px 12px 14px;
+  padding: 12px 13px 12px 12px
 }
 
 .app-store-link__icon {
-  width: 21px;
+  width: 30px;
 }
 
 .google-play-link__icon {
-  width: 22px;
+  width: 26px;
 }

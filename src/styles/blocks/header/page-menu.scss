@@ -11,10 +11,10 @@
   font-size: 16px;
   line-height: 56px;
   letter-spacing: 0.2px;
-  color: #454545;
+  color: $text-color-dark;
   border-bottom: 1px solid transparent;
   transition: border-bottom-color .3s ease-out;
   &:hover,  &:focus {
-    border-bottom-color: #454545;
+    border-bottom-color: $text-color-dark;
   }
 }

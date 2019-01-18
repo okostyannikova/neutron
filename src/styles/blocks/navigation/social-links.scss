@@ -1,12 +1,12 @@
 .social-links__item {
   &+& {
-    margin-top: 18px;
+    margin-top: 13px;
   }
 }
 
 .social-links__icon {
-  width: 20px;
-  height: 20px;
+  width: 21px;
+  height: 21px;
   transition: transform .2s ease-out;
   &:hover,
   &:focus {

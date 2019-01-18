@@ -1,0 +1,43 @@
+.advantages {
+  padding-top: 104px;
+}
+
+.advantages__container {
+  max-width: 1249px;
+}
+
+.advantages__security {
+  margin-top: 142px;
+  max-width: 846px;
+}
+
+.advantages__content {
+  max-width: 630px;
+}
+
+.advantages__title {
+  font-size: 60px;
+  font-weight: normal;
+  line-height: 0.37;
+  letter-spacing: 0.6px;
+  text-align: right;
+  color: #535353;
+  margin-bottom: 0;
+}
+
+.advantages__text {
+  max-width: 622px;
+  font-size: 24px;
+  line-height: 0.92;
+  letter-spacing: 0.2px;
+  text-align: right;
+  color: #959393;
+  margin-top: 36px;
+}
+
+.advantages__button {
+  text-align: right;
+  padding-right: 18px;
+}
+
+@import "./list.scss";

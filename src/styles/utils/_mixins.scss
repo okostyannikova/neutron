@@ -1,0 +1,10 @@
+@mixin media($max-width) {
+  @media screen and (max-width: $max-width) {
+    @content;
+  }
+}
+
+@function responsive-ratio($elem, $container) {
+  $ratio: unquote(($elem / $container) * 100 + "%");
+  @return $ratio;
+}
