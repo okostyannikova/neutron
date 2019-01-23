@@ -9,30 +9,14 @@
 .login-btn {
   font-size: 16px;
   color: $text-color-dark;
+  background-color: #fff;
   font-weight: 700;
-  /* &:hover,
-  &:focus {
-    color: #959393;
-    .login-btn__icon {
-      fill: #6379d0;
-    }
-  } */
 }
 
 .user-nav__singup {
   margin-left: 15px;
-}
 
-.signup-btn {
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 700;
-  padding: 10px 21px 12px;
-  background-color: $btn-color-main;
-  border-radius: 20px;
-  box-shadow: 0px 7px 9px 0 rgba(142, 117, 222, 0.15), 0px 13px 21px 0 rgba(20, 80, 204, 0.27), 0px 13px 21px 0 rgba(0, 0, 0, 0.15), 0px 4px 16px 0 rgba(102, 145, 233, 0.33), 0px 4px 16px 0 rgba(0, 0, 0, 0.09), 0px 3px 9px 0 rgba(53, 103, 205, 0.09), 0px 3px 9px 0 rgba(0, 0, 0, 0.09), 0px 3px 3px 0 rgba(102, 145, 233, 0.09), 0px 3px 3px 0 rgba(0, 0, 0, 0.17);
-  &:hover,
-  &:focus {
-    background: linear-gradient(135deg, $btn-color-main, #6379d0);
+  @include media(575px) {
+    display: none;
   }
 }

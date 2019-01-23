@@ -14,4 +14,9 @@
    border-color: #ffffff;
    background-color: lighten($text-color-main, 10%) 
   }
+
+  @include media(575px) {
+    padding: 15px 30px 16px;
+    min-height: 55px;
+  }
 }

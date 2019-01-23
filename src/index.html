@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>neutronMail</title>
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Aleo:400i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Aleo:400i" rel="stylesheet" />
   <link rel="stylesheet" href="main.css" />
 </head>
 
@@ -49,27 +49,34 @@
           </svg>
           Log in
         </button>
-        <button class="user-nav__singup main-btn main-btn--right-gradient button"><span>Sign up</span></button>
+        <button class="user-nav__singup main-btn main-btn--right-gradient button">
+          <span>Sign up</span>
+        </button>
       </nav>
     </div>
 
-    <div class="container">
-      <ul class="header__language">
-        <li class="header__language-item header__language-item--active">
-          English
-        </li>
-        /
-        <li class="header__language-item">French</li>
-        /
-        <li class="header__language-item">Italian</li>
-        /
-        <li class="header__language-item">Polish</li>
-      </ul>
+    <div class="container header__language">
+      <div class="language">
+        <button class="language__icon" type="button">En</button>
+        <ul class="language__list">
+          <li class="language__item language__item--active">
+            <button type="button">English</button>
+          </li>
+          <li class="language__item">
+            <button type="button">French</button>
+          </li>
+          <li class="language__item">
+            <button type="button">Italian</button>
+          </li>
+          <li class="language__item">
+            <button type="button">Polish</button>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
 
   <div class="herro">
-
     <div class="herro__container container">
       <div class="herro__text">
         <h1 class="herro__title">Secure Email Communication</h1>
@@ -80,53 +87,53 @@
 
       <div class="herro__buttons app-buttons">
         <a href="#" class="main-btn button"><span>Create account</span></a>
-        <a href="#" class="app-store-link button" title="Go to Apple Store">
-          <img class="app-store-link__icon" src="./images/icons/sprite.svg#apple-brands" alt="apple store">
-        </a>
-        <a href="#" class="google-play-link button" title="Go to Google Play">
-          <img class="google-play-link__icon" src="./images/icons/sprite.svg#google-play-brands" alt="google play">
-        </a>
+        <div class="app-buttons__wrapper">
+          <a href="#" class="app-store-link button" aria-label="Go to Apple Store">
+            <img class="app-store-link__icon" src="./images/icons/sprite.svg#apple-brands" alt="apple store" />
+          </a>
+          <a href="#" class="google-play-link button" aria-label="Go to Google Play">
+            <img class="google-play-link__icon" src="./images/icons/sprite.svg#google-play-brands" alt="google play" />
+          </a>
+        </div>
+
       </div>
     </div>
 
     <ul class="herro__social social-links">
       <li class="social-links__item">
-        <a href title="google+">
+        <a href title="google+" aria-label="google+">
           <img class="social-links__icon" src="./images/icons/sprite.svg#google-plus-square-brands" />
-          </svg>
         </a>
       </li>
       <li class="social-links__item">
-        <a href title="facebook">
+        <a href title="facebook" aria-label="facebook">
           <img class="social-links__icon" src="./images/icons/sprite.svg#facebook-square-brands" />
         </a>
       </li>
       <li class="social-links__item">
-        <a href title="twitter">
+        <a href title="twitter" aria-label="twitter">
           <img class="social-links__icon" src="./images/icons/sprite.svg#twitter-square-brands" />
         </a>
       </li>
     </ul>
-
   </div>
 
   <main class="main">
-
     <section class="advantages">
       <div class="advantages__container container">
-
         <ul class="advantages__list list">
           <li class="list__item">
             <div class="list__header list__header--privacy">
               <div class="list__header-wrapper">
                 <h2 class="list__title">Swiss Privacy</h2>
-                <p class="list__desc"> Data Security and Neutrality</p>
+                <p class="list__desc">Data Security and Neutrality</p>
               </div>
             </div>
-            <p class="list__text">NeutronMail is incorporated in Somewhere and all our servers are located in
-              Switzerland.
-              This means all user data is
-              protected by strict Swiss privacy laws.</p>
+            <p class="list__text">
+              NeutronMail is incorporated in Somewhere and all our servers are
+              located in Switzerland. This means all user data is protected by
+              strict Swiss privacy laws.
+            </p>
           </li>
           <li class="list__item">
             <div class="list__header list__header--encryption">
@@ -135,114 +142,139 @@
                 <p class="list__desc">Automatic Email Security</p>
               </div>
             </div>
-            <p class="list__text">All emails are secured automatically with end-to-end encryption. This means even we
-              cannot decrypt and read your emails. As a result, your encrypted emails cannot
-              be shared with third parties.</p>
+            <p class="list__text">
+              All emails are secured automatically with end-to-end encryption.
+              This means even we cannot decrypt and read your emails. As a
+              result, your encrypted emails cannot be shared with third
+              parties.
+            </p>
           </li>
           <li class="list__item">
             <div class="list__header list__header--anonymous-email">
               <div class="list__header-wrapper">
                 <h2 class="list__title">Anonymous Email</h2>
-                <p class="list__desc"> Protect Your Privacy</p>
+                <p class="list__desc">Protect Your Privacy</p>
               </div>
             </div>
-            <p class="list__text">No personal information is required to create your secure email account. By default,
-              we
-              do not keep any IP logs which can be linked to your anonymous email account. Your privacy comes first.</p>
+            <p class="list__text">
+              No personal information is required to create your secure email
+              account. By default, we do not keep any IP logs which can be
+              linked to your anonymous email account. Your privacy comes
+              first.
+            </p>
           </li>
         </ul>
-
       </div>
       <div class="advantages__security container">
         <div class="advantages__content">
           <h2 class="advantages__title">Physical Security</h2>
-          <p class="advantages__text">NeutronMail's infrastructure resides in Europe's <span class="text-accented">most
-              secure</span> datacenter, underneath 1000 meters of solid rock.</p>
+          <p class="advantages__text">
+            NeutronMail's infrastructure resides in Europe's
+            <span class="text-accented">most secure</span> datacenter,
+            underneath 1000 meters of solid rock.
+          </p>
         </div>
         <div class="advantages__button">
-          <a href class=" grey-button button">Learn more about our security features</a>
+          <a href class="grey-button button">Learn more about our security features</a>
         </div>
       </div>
     </section>
 
-    <section class="reviews">
+    <div class="reviews">
       <div class="reviews__img"><img src="./images/reviewers.png" alt="reviewers"></div>
       <ul class="reviews__list" id="slider">
-        <li class="reviews__text slide showing">A new email service being developed by a group from MIT and CERN
-          promises to bring
-          secure,
-          encrypted email to the masses and keep sensitive information away from prying eyes.
-          <p class="reviews__author"> — Boston Herald</p>
+        <li class="reviews__text slide showing">
+          A new email service being developed by a group from MIT and CERN
+          promises to bring secure, encrypted email to the masses and keep
+          sensitive information away from prying eyes.
+          <p class="reviews__author">— Boston Herald</p>
         </li>
         <li class="reviews__text slide">
-          An alternative to the ad-based revenue model of free services like Gmail which actively scan your emails to
-          deliver relevant ads to you online
-          <p class="reviews__author"> — Forbes</p>
+          An alternative to the ad-based revenue model of free services like
+          Gmail which actively scan your emails to deliver relevant ads to you
+          online
+          <p class="reviews__author">— Forbes</p>
         </li>
         <li class="reviews__text slide">
-          [NeutronMail's] security measures are intense: end-to-end encryption and user authentication protocols so
-          rigorous even the creators can't read user emails
-          <p class="reviews__author"> — Huffington Post</p>
+          [NeutronMail's] security measures are intense: end-to-end encryption
+          and user authentication protocols so rigorous even the creators
+          can't read user emails
+          <p class="reviews__author">— Huffington Post</p>
         </li>
       </ul>
-    </section>
+    </div>
 
-    <section class="download">
+    <div class="download">
       <div class="download__container container">
         <div class="download__content">
           <p class="download__title">Any device, anywhere</p>
-          <p class="download__text">The NeutronMail inbox is optimized for productivity. Each detail within our secure
-            email service is optimized to help you better read, organize, and send email.</p>
+          <p class="download__text">
+            The NeutronMail inbox is optimized for productivity. Each detail
+            within our secure email service is optimized to help you better
+            read, organize, and send email.
+          </p>
           <div class="download__links">
-            <a class="e-shop-link button"><img src="./images/icons/app-store-btn.png" alt="link to app store"></a>
-            <a class="e-shop-link button"><img src="./images/icons/google-play-btn.png" alt="link to google play"></a>
+            <a class="e-shop-link button"><img src="./images/icons/app-store-btn.png" alt="link to app store" /></a>
+            <a class="e-shop-link button"><img src="./images/icons/google-play-btn.png" alt="link to google play" /></a>
           </div>
         </div>
         <img class="download__img" src="./images/devices.png"></img>
       </div>
       <div class="download__skew-bcg"></div>
-    </section>
+    </div>
 
     <section class="support">
       <div class="support__container container">
         <h3 class="support__title">Privacy is a fundamental human right.</h3>
-        <p class="support__text">Your support helps us to protect privacy world-wide.</p>
+        <p class="support__text">
+          Your support helps us to protect privacy world-wide.
+        </p>
         <div class="support__buttons">
           <a class="support__upgrate-btn main-btn button">
             <span>
-              <img src="./images/icons/sprite.svg#cloud-upload">
-              Upgrade to Paid Plan
+              <img src="./images/icons/sprite.svg#cloud-upload" /> Upgrade to
+              Paid Plan
             </span>
           </a>
           <a class="support__donate-btn main-btn main-btn--light button">
             <span>
-              <img src="./images/icons/sprite.svg#dollar-sign">
-              Donate
+              <img src="./images/icons/sprite.svg#dollar-sign" /> Donate
             </span>
           </a>
         </div>
       </div>
     </section>
 
-    <section class="partners">
+    <div class="partners">
       <div class="partners__container container">
         <p class="partners__text">Those, who help us secure your privacy</p>
         <img src="./images/partners.png" alt="MIT Venture Mentoring, Deltalis, Fongit, QouVadis, Cyberkov, Radware, ip-max"
           class="partners__logos">
       </div>
-    </section>
-
+    </div>
   </main>
 
   <footer class="footer">
     <div class="footer__container container">
       <div class="footer__top">
-
         <ul class="footer__contacts">
-          <li>General: <a href="mailto:contact@neutronmail.ch" class="footer__accented">contact@neutronmail.ch</a></li>
-          <li>Media: <a href="mailto:media@neutronmail.ch" class="footer__accented">media@neutronmail.ch</a></li>
-          <li>Security: <a href="mailto:security@neutronmail.ch" class="footer__accented">security@neutronmail.ch</a></li>
-          <li class="footer__support-link">For support inquiries, please visit<div class="footer__accented"><a href="javascript:void(0);">neutronmail.com/support</a></div>
+          <li>
+            General:
+            <a href="mailto:contact@neutronmail.ch" class="footer__accented">contact@neutronmail.ch</a>
+          </li>
+          <li>
+            Media:
+            <a href="mailto:media@neutronmail.ch" class="footer__accented">media@neutronmail.ch</a>
+          </li>
+          <li>
+            Security:
+            <a href="mailto:security@neutronmail.ch" class="footer__accented">security@neutronmail.ch</a>
+          </li>
+          <li class="footer__support-link">
+            For support inquiries, please visit
+            <div class="footer__accented">
+              <a href="javascript:void(0);">neutronmail.com/support</a>
+            </div>
           </li>
         </ul>
 
@@ -250,31 +282,61 @@
           <div class="footer__menu">
             <p class="footer__title">Company</p>
             <ul class="footer__list">
-              <li class="footer__menu-item"><a href="javascript:void(0);">Blog</a></li>
-              <li class="footer__menu-item"><a href="javascript:void(0);">Team</a></li>
-              <li class="footer__menu-item"><a href="javascript:void(0);">Careers</a></li>
-              <li class="footer__menu-item"><a href="javascript:void(0);">Support</a></li>
-              <li class="footer__menu-item"><a href="javascript:void(0);">Donate</a></li>
+              <li class="footer__menu-item">
+                <a href="javascript:void(0);">Blog</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="javascript:void(0);">Team</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="javascript:void(0);">Careers</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="javascript:void(0);">Support</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="javascript:void(0);">Donate</a>
+              </li>
             </ul>
           </div>
           <div class="footer__menu">
             <p class="footer__title">Legal</p>
             <ul class="footer__list">
-              <li class="footer__menu-item"><a href="javascript:void(0);">Imprint</a></li>
-              <li class="footer__menu-item"><a href="javascript:void(0);">Privacy Policy</a></li>
-              <li class="footer__menu-item"><a href="javascript:void(0);">Terms & Conditions</a></li>
-              <li class="footer__menu-item"><a href="javascript:void(0);">Transparency Report</a></li>
-              <li class="footer__menu-item"><a href="javascript:void(0);">Report Abuse</a></li>
+              <li class="footer__menu-item">
+                <a href="javascript:void(0);">Imprint</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="javascript:void(0);">Privacy Policy</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="javascript:void(0);">Terms & Conditions</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="javascript:void(0);">Transparency Report</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="javascript:void(0);">Report Abuse</a>
+              </li>
             </ul>
           </div>
           <div class="footer__menu">
             <p class="footer__title">NeutronMail</p>
             <ul class="footer__list">
-              <li class="footer__menu-item"><a href="javascript:void(0);">Pricing</a></li>
-              <li class="footer__menu-item"><a href="javascript:void(0);">Security</a></li>
-              <li class="footer__menu-item"><a href="javascript:void(0);">Shop</a></li>
-              <li class="footer__menu-item"><a href="javascript:void(0);">Press/Media Kit</a></li>
-              <li class="footer__menu-item"><a href="javascript:void(0);"> Onion Site</a></li>
+              <li class="footer__menu-item">
+                <a href="javascript:void(0);">Pricing</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="javascript:void(0);">Security</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="javascript:void(0);">Shop</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="javascript:void(0);">Press/Media Kit</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="javascript:void(0);"> Onion Site</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -288,10 +350,11 @@
           <a href="javascript:void(0);">Feedback Forum </a>/
           <a href="javascript:void(0);">Reddit</a>
         </div>
-        <p class="footer__copyright">&copy 2017 Neutron Technologies AG. All Rights Reserved.</p>
+        <p class="footer__copyright">
+          &copy 2017 Neutron Technologies AG. All Rights Reserved.
+        </p>
       </div>
     </div>
-
   </footer>
 
   <script src="main.js"></script>

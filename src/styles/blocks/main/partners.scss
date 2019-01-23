@@ -1,10 +1,17 @@
 .partners {
   margin-top: 104px;
+  @include media(575px) {
+    margin-top: 70px;
+  }
 }
 
 .partners__container {
   max-width: 974px;
   padding-left: 52px;
+
+  @include media(998px) {
+    padding: 0 10px;
+  }
 }
 
 .partners__text {
@@ -13,4 +20,9 @@
   text-align: right;
   color: #7a7a7a;
   margin: 0;
+}
+
+.partners__logos {
+  max-width: 974px;
+  width: 100%;
 }

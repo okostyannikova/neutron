@@ -1,9 +1,12 @@
 .support {
   margin-top: 240px;
+  @include media(615px) {
+    margin-top: 100px;
+  }
 }
 
 .support__container {
-  max-width: 652px;
+  max-width: 700px;
 }
 
 .support__title {
@@ -14,24 +17,38 @@
   letter-spacing: 0.4px;
   color: $text-color-dark;
   margin: 0;
+  @include media(575px) {
+    font-size: 26px;
+    line-height: 1;
+  }
 }
 
 .support__text {
   font-size: 29px;
   line-height: 1.28;
+  text-align: center;
   letter-spacing: 0.3px;
   color: $text-color-main;
   margin: 5px 0 0;
+  @include media(575px) {
+    font-size: 18px;
+    margin-top: 10px;
+  }
 }
 
 .support__buttons {
   margin-top: 39px;
   display: flex;
   justify-content: center;
+  @include media(575px) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
 }
 
 .support__upgrate-btn {
-  min-width: 246px;
+  width: 246px;
   img {
     width: 25px;
     vertical-align: sub;
@@ -40,8 +57,13 @@
 }
 
 .support__donate-btn {
-  min-width: 166px;
+  width: 166px;
   margin-left: 51px;
+
+  @include media(575px) {
+    margin-left: 0;
+    margin-top: 20px;
+  }
   img {
     width: 23px;
     vertical-align: middle;

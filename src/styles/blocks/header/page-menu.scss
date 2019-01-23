@@ -1,9 +1,19 @@
 .page-menu__list {
   display: flex;
+  @include media(998px) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
+
 .page-menu__item {
   & + & {
     margin-left: 24px;
+  }
+  @include media(575px) {
+    & + & {
+      margin-left: 15px;
+    }
   }
 }
 

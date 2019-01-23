@@ -6,6 +6,11 @@
   max-width: 1800px;
   padding-left: 21px;
   margin: auto;
+
+  img {
+    max-width: 943px;
+    width: 100%;
+  }
 }
 
 .reviews__list {
@@ -22,6 +27,9 @@
   letter-spacing: 0.2px;
   color: #101010;
   margin-left: 43px;
+  @include media(575px) {
+    font-size: 18px;
+  }
 }
 
 .reviews__author {
