@@ -43,11 +43,16 @@ gulp.task("styles", () => {
 });
 
 gulp.task("scripts", () => {
-  return gulp
-    .src(["node_modules/jquery/dist/jquery.min.js", "src/js/main.js"])
-    .pipe(concat("main.js"))
-    .pipe(babel())
-    .pipe(gulp.dest("build"));
+  return (
+    gulp
+      .src([
+        "./node_modules/svg4everybody/dist/svg4everybody.js",
+        "src/js/main.js"
+      ])
+      .pipe(concat("main.js"))
+      //.pipe(babel())
+      .pipe(gulp.dest("build"))
+  );
 });
 
 gulp.task("html", () => {
@@ -62,25 +67,33 @@ gulp.task("images", () => {
 });
 
 gulp.task("svg", function() {
-  return gulp
-    .src("src/images/icons/sprite.svg/*.svg")
-    .pipe(
-      svgmin({
-        js2svg: {
-          pretty: true
-        }
-      })
-    )
-    .pipe(
-      svgSprite({
-        mode: {
-          stack: {
-            sprite: "../sprite.svg"
+  return (
+    gulp
+      .src("src/images/icons/sprite.svg/*.svg")
+      .pipe(
+        svgmin({
+          js2svg: {
+            pretty: true
           }
-        }
-      })
-    )
-    .pipe(gulp.dest("build/images/icons"));
+        })
+      )
+      .pipe(
+        svgSprite({
+          shape: {
+            spacing: {
+              padding: 0,
+              box: "content"
+            }
+          },
+          mode: {
+            stack: {
+              sprite: "../sprite.svg"
+            }
+          }
+        })
+      )
+      .pipe(gulp.dest("build/images/icons"))
+  );
 });
 
 gulp.task("serve", () => {

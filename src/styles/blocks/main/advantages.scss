@@ -31,7 +31,7 @@
   line-height: 0.37;
   letter-spacing: 0.6px;
   text-align: right;
-  color: #535353;
+  color: $text-color-dark;
   margin-bottom: 0;
 
   @include media(998px) {
@@ -48,7 +48,7 @@
   line-height: 0.92;
   letter-spacing: 0.2px;
   text-align: right;
-  color: #959393;
+  color: $text-color-main;
   margin-top: 36px;
   @include media(575px) {
     font-size: 20px;

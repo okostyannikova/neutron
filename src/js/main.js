@@ -28,3 +28,5 @@
 
   setInterval(nextSlide, 4000);
 })();
+
+svg4everybody();
