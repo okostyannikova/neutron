@@ -13,8 +13,6 @@ const newer = require("gulp-newer");
 const svgmin = require("gulp-svgmin");
 const svgSprite = require("gulp-svg-sprite");
 
-//const rev = require("gulp-rev");
-
 sass.compiler = require("node-sass");
 
 const isDevelopment =
@@ -35,11 +33,8 @@ gulp.task("styles", () => {
       .on("error", notify.onError("Style Error: <%= error.message %>"))
       .pipe(gulpIf(isDevelopment, sourcemaps.write()))
       .pipe(gulpIf(!isDevelopment, csso()))
-      //.pipe(gulpIf(!isDevelopment, rev()))
       .pipe(gulp.dest("build"))
   );
-  //.pipe(gulpIf(!isDevelopment, rev.manifest("css.json")))
-  //.pipe(gulpIf(!isDevelopment, gulp.dest("manifest")));
 });
 
 gulp.task("scripts", () => {
